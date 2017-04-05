@@ -17,7 +17,6 @@ function myFunction() {
 
 /*
 need to put in variables for each id
-var
 
 */
 
