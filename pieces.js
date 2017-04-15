@@ -22,14 +22,14 @@ need to put in variables for each id
 
 
  //Esterlin- helped
- // got help again ..... 4417
+ // got help again - Kenaan ..... 4417
 
  if (other >= remainder){
-  document.getElementById('two');
+  document.getElementById('.two');
  //console.log("hi");
 }else{
  //console.log("bye");
- document.getElementById('three');
+ document.getElementById('.three');
  };
 
 //This is for testing
