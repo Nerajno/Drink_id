@@ -1,7 +1,6 @@
-// this is untidy as hell.
-
-function myFunction() {
-//Get the current year
+console.log("hi");
+var myFunction = function(){
+ console.log("hello");
   var today = new Date();
   var year = today.getFullYear();
 
@@ -15,28 +14,25 @@ function myFunction() {
   var ableToDrnk = year - urStuff;
   var other = year - ableToDrnk;
 
-/*
-need to put in variables for each id
-
-*/
-
-
  //Esterlin- helped
  // got help again - Kenaan ..... 4417
 
  if (other >= remainder){
-  document.getElementById('.two');
- //console.log("hi");
+ // example = $("")	
+   $('body').animate({
+        scrollTop: $("#three").offset().top
+    }, 2000);
+ console.log("Leo");
 }else{
- //console.log("bye");
- document.getElementById('.three');
+$('body').animate({
+        scrollTop: $("#two").offset().top
+    }, 2000);
+
  };
 
+}
+$("#move").click(myFunction);
 //This is for testing
- console.log(other);
-};
-// was trying to figure this out another way
-//Making progress
 
 /*Notes/ Ideas
 *onclick = take the input and minus it from today's date and if more than 21 give 1 message (yes,you can) else another message (you shall not pass) */
