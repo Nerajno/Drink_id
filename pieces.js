@@ -1,4 +1,4 @@
-console.log("hi");
+
 var myFunction = function(){
  console.log("hello");
   var today = new Date();
@@ -14,8 +14,9 @@ var myFunction = function(){
   var ableToDrnk = year - urStuff;
   var other = year - ableToDrnk;
 
- //Esterlin- helped
- // got help again - Kenaan ..... 4417
+/*=> this if else statement takes their information and scroll to the other sections 
+of the page based  on the id of the page sections*/ 
+ //Esterlin- helped and  got help again - Kenaan ..... 4417
 
  if (other >= remainder){
  // example = $("")	
@@ -29,10 +30,24 @@ $('body').animate({
     }, 2000);
 
  };
-
 }
+//=> Running or rather calling the function.
 $("#move").click(myFunction);
 //This is for testing
 
-/*Notes/ Ideas
-*onclick = take the input and minus it from today's date and if more than 21 give 1 message (yes,you can) else another message (you shall not pass) */
+//=> this is the code for the back to top button, found on W3Schools site. 
+//When the user scrools down from the top of the document, it shows the button.
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0; // For Chrome, Safari and Opera 
+    document.documentElement.scrollTop = 0; // For IE and Firefox
+}
