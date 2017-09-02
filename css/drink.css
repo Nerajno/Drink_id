@@ -4,30 +4,34 @@
       line-height: 1.8;
       color: #f5f6f7;
   }
-  /*I loved that found out how to make it full page per div (height: 100vh = 100% view height)*/
+
+  /* => I loved that found out how to make it full page per div (height: 100vh = 100% view height)*/
   p {font-size: 16px;}
   .margin {
     margin-bottom: 45px;
-    vertical-align: middle;}
+    vertical-align: middle;
+  }
+  
   .bg-1 {
       background-color: #1abc9c; /* Green */
       color: #ffffff;
-      height: 100vh
-  }
+      height: 100vh;
+}
+
   .bg-2 {
       background-color: #474e5d; /* Dark Blue */
       color: #ffffff;
-      height: 100vh
+      height: 100vh;
   }
   .bg-3 {
-      background-color: #ffffff; /* White */
-      color: #555555;
-      height: 100vh
+    color: black;
+    height: 100vh;*/
+    background-repeat: no-repeat;
+    background-size: fixed;
+
   }
-  .bg-4 {
-      background-color: #2f2f2f; /* Black Gray */
-      color: #fff;
-  }
+
+ 
   .container-fluid {
       padding-top: 70px;
       padding-bottom: 70px;
@@ -58,13 +62,15 @@
   border-radius: 10px;
 }
 
+.twBtn {
+  margin-top: 7px;
+}
+
 #myBtn:hover {
   background-color: #555;
 }
 
-
-
-  #birthYr{
-    color: #00bfff;
-    text-align: center;
+#birthYr{
+   color: #00bfff;
+   text-align: center;
   }
