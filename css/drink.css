@@ -1,38 +1,38 @@
 
-  body {
-      font-family:"Montserrat", sans-serif;
-      line-height: 1.8;
-      color: #f5f6f7;
-  }
-
-  /* => I loved that found out how to make it full page per div (height: 100vh = 100% view height)*/
-  p {font-size: 16px;}
-  .margin {
-    margin-bottom: 45px;
-    vertical-align: middle;
-  }
-  
- form {
-  margin: 5px 0 5px 0;
- }
-
-.bg-1 {
-      background-color: #1abc9c; /* Green */
-      color: #ffffff;
-      height: 100vh;
-}  
-
-.bg-1-content {
- /* font-size-adjust: 0.58; will be back ?*/
-  text-align: center;
-  position: relative;
-   margin: 0;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
+body {
+  font-family:"Montserrat", sans-serif;
+  line-height: 1.8;
+  color: #f5f6f7;
 }
 
-  /*=> Content of the No Section*/ 
+/* => I loved that found out how to make it full page per div (height: 100vh = 100% view height)*/
+p {font-size: 16px;}
+.margin {
+  margin-bottom: 45px;
+  vertical-align: middle;
+}
+
+form {
+  margin: 5px 0 5px 0;
+}
+
+.bg-1 {
+  background-color: #1abc9c; /* Green */
+  color: #ffffff;
+  height: 100vh;
+}
+
+.bg-1-content {
+  /* font-size-adjust: 0.58; will be back ?*/
+  text-align: center;
+  position: relative;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*=> Content of the No Section*/
 #image1{
   height: 70%;
   width: 70%;
@@ -45,20 +45,20 @@
   border-color: green;
 }
 
-  .bg-2 {
-      background-color: #474e5d; /* Dark Blue */
-      color: #ffffff;
-      height: 100vh;
+.bg-2 {
+  background-color: #474e5d; /* Dark Blue */
+  color: #ffffff;
+  height: 100vh;
 }
 
-  .bg-3 {
-    color: black;
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: fixed;
-  }
+.bg-3 {
+  color: black;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: fixed;
+}
 
- /*=> Content of the Yes Section*/ 
+/*=> Content of the Yes Section*/
 #image2{
   height: 70%;
   width: 70%;
@@ -71,26 +71,26 @@
   border-color: green;
 }
 
-  .navbar-inverse{
-      padding: 15px 5px 15px 5px;
-  }
+.navbar-inverse{
+  padding: 15px 5px 15px 5px;
+}
 
-  .navbar {
-      border: 0;
-      border-radius: 0;
-      margin-bottom: 0;
-      font-size: 12px;
-      letter-spacing: 5px;
-  }
+.navbar {
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  letter-spacing: 5px;
+}
 
-  .navbar-brand {
-    text-transform: uppercase;
-    text-align: center;
-  }
-  .navbar-nav  li a:hover {
-      color: #1abc9c !important;
-      display: flex; 
-  }
+.navbar-brand {
+  text-transform: uppercase;
+  text-align: center;
+}
+.navbar-nav  li a:hover {
+  color: #1abc9c !important;
+  display: flex;
+}
 
 #myBtn {
   display: none;
@@ -116,10 +116,10 @@
 }
 
 li.twBtn{
-  display: flex; 
+  display: flex;
 }
 
 #birthYr{
-   color: #00bfff;
-   text-align: center;
-  }
+  color: #00bfff;
+  text-align: center;
+}
