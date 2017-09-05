@@ -16,8 +16,7 @@ var myFunction = function() {
     //Esterlin- helped and  got help again - Kenaan ..... 4417
 
     if (other >= remainder) {
-        // example = $("")  
-        $('body').animate({
+    $('body').animate({
             scrollTop: $("#three").offset().top
         }, 2000);
         console.log("Leo");

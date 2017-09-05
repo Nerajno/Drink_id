@@ -12,7 +12,11 @@
     vertical-align: middle;
   }
   
-  .bg-1 {
+ form {
+  margin: 5px 0 5px 0;
+ }
+
+.bg-1 {
       background-color: #1abc9c; /* Green */
       color: #ffffff;
       height: 100vh;
@@ -28,13 +32,15 @@
    transform: translate(-50%, -50%);
 }
 
+  /*=> Content of the No Section*/ 
 #image1{
-  height: 50%;
-  width: 50%;
+  height: 70%;
+  width: 70%;
   margin: auto;
   background-image: url("https://farm4.staticflickr.com/3678/32795294330_6472094603_o.jpg");
   background-size: 47%;
   background-repeat: no-repeat;
+  background-position: 50% 50%;
   border-width: 2px;
   border-color: green;
 }
@@ -45,16 +51,26 @@
       height: 100vh;
 }
 
-
-
   .bg-3 {
     color: black;
-    height: 100vh;*/
+    height: 100vh;
     background-repeat: no-repeat;
     background-size: fixed;
   }
 
- 
+ /*=> Content of the Yes Section*/ 
+#image2{
+  height: 70%;
+  width: 70%;
+  margin: auto;
+  background-image: url("https://farm4.staticflickr.com/3899/33021103702_6f8b34e221_o.jpg");
+  background-size: 47%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border-width: 2px;
+  border-color: green;
+}
+
   .navbar-inverse{
       padding: 15px 5px 15px 5px;
   }
