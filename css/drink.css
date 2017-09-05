@@ -1,6 +1,6 @@
 
   body {
-      font: 20px Montserrat, sans-serif;
+      font-family:"Montserrat", sans-serif;
       line-height: 1.8;
       color: #f5f6f7;
   }
@@ -19,6 +19,7 @@
 }  
 
 .bg-1-content {
+ /* font-size-adjust: 0.58; will be back ?*/
   text-align: center;
   position: relative;
    margin: 0;
@@ -28,25 +29,29 @@
 }
 
 #image1{
-  height: 150px;
-  width: 150px;
-  background-color: red;
+  height: 50%;
+  width: 50%;
   margin: auto;
-  background-image: url();
-
+  background-image: url("https://farm4.staticflickr.com/3678/32795294330_6472094603_o.jpg");
+  background-size: 47%;
+  background-repeat: no-repeat;
+  border-width: 2px;
+  border-color: green;
 }
 
   .bg-2 {
       background-color: #474e5d; /* Dark Blue */
       color: #ffffff;
       height: 100vh;
-  }
+}
+
+
+
   .bg-3 {
     color: black;
     height: 100vh;*/
     background-repeat: no-repeat;
     background-size: fixed;
-
   }
 
  
@@ -64,9 +69,11 @@
 
   .navbar-brand {
     text-transform: uppercase;
+    text-align: center;
   }
   .navbar-nav  li a:hover {
       color: #1abc9c !important;
+      display: flex; 
   }
 
 #myBtn {
@@ -89,8 +96,12 @@
 
 .twBtn {
   margin-top: 7px;
+  justify-content: center;
 }
 
+li.twBtn{
+  display: flex; 
+}
 
 #birthYr{
    color: #00bfff;
