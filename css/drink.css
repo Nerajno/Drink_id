@@ -16,7 +16,17 @@
       background-color: #1abc9c; /* Green */
       color: #ffffff;
       height: 100vh;
+}  
+
+.bg-1-content {
+  text-align: center;
+  position: relative;
+   margin: 0;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
 }
+
 
   .bg-2 {
       background-color: #474e5d; /* Dark Blue */
@@ -32,16 +42,20 @@
   }
 
  
-  .container-fluid {
-      padding-top: 70px;
-      padding-bottom: 70px;
+  .navbar-inverse{
+      padding: 15px 5px 15px 5px;
   }
+
   .navbar {
       border: 0;
       border-radius: 0;
       margin-bottom: 0;
       font-size: 12px;
       letter-spacing: 5px;
+  }
+
+  .navbar-brand {
+    text-transform: uppercase;
   }
   .navbar-nav  li a:hover {
       color: #1abc9c !important;
@@ -61,14 +75,14 @@
   padding: 15px;
   border-radius: 10px;
 }
+#myBtn:hover {
+  background-color: #555;
+}
 
 .twBtn {
   margin-top: 7px;
 }
 
-#myBtn:hover {
-  background-color: #555;
-}
 
 #birthYr{
    color: #00bfff;
