@@ -27,6 +27,14 @@
    transform: translate(-50%, -50%);
 }
 
+#image1{
+  height: 150px;
+  width: 150px;
+  background-color: red;
+  margin: auto;
+  background-image: url();
+
+}
 
   .bg-2 {
       background-color: #474e5d; /* Dark Blue */

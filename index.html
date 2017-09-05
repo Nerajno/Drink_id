@@ -1,80 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>  <title>Drinking Age Checker</title>
+
+<head>
+  <title>Drinking Age Checker</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
   <!-- Fonts and CSS stylesheets -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="css/drink.css" rel="stylesheet" type="text/css">
-
   <!-- Js Scripts  -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="pieces.js"></script>
-
 </head>
 
 <body>
- <!-- Navbar -->
- <nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">So You Think You Can Drink ? <i class="fa fa-glass" aria-hidden="true"></i></a>
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
+  <!-- Navbar -->
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">So You Think You Can Drink ? <i class="fa fa-glass" aria-hidden="true"></i></a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
-          <li class="twBtn"><button><a class="btn btn-default btn-sm" href="https://twitter.com/nerajno" role="button" target="_blank"><span class="fa fa-twitter"></span> Follow me on Twitter</a></button>
+          <li class="twBtn">
+            <button><a class="btn btn-default btn-sm" href="https://twitter.com/nerajno" role="button" target="_blank"><span class="fa fa-twitter"></span> Follow me on Twitter</a></button>
           </li>
-      </ul>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
-
-   <!-- First Container -->
+  </nav>
+  <!-- First Container -->
   <!--Link back the top of this id to put in each page-->
   <!-- on.click(reset) function-->
   <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
   <div class="container-fluid bg-1 text-center" id="one">
     <h3 class="margin">How Old Are You ?</h3>
-    <h4 class="margin">Please put in your age below</h3>
-      <div>
-        <form>
-          <input type="number"  id="birthYr"  />
-        </form>
-        <button onclick="myFunction()" class="btn btn-default letSee" id="move">Let's See</button>
-
-      </div>
-      <h3>Yes, Answer The Question <i class="fa fa-arrow-up" aria-hidden="true"></i></h3>
+    <h4 class="margin">Please put in your age below</h4>
+    <div>
+      <form>
+        <input type="number"  id="birthYr"  />
+      </form>
+      <button onclick="myFunction()" class="btn btn-default letSee" id="move">Let's See</button>
 
     </div>
+    <h3>Yes, Answer The Question <i class="fa fa-arrow-up" aria-hidden="true"></i></h3>
 
-    <!-- Second Container -->
-    <div class="container-fluid bg-2 text-center" id="two">
-      <h3 class="margin">You shall not pass</h3>
-      <div class="images"></div>
-      <a href="#" class="btn btn-default btn-lg">
-        <span class="glyphicon glyphicon-search"></span> Search
-      </a>
-      <!-- #back-to-#id-one -->
-    </div>
-
-    <!-- Third Container (Grid) -->
-    <div class="container-fluid bg-3 text-center" id="three">
-      <h3 class="margin">Yes you can </h3><br>
-      <div class="images"></div>
-      <!-- #back-to-#id-one -->
-    </div>
   </div>
+
+  <!-- Second Container -->
+  <div class="container-fluid bg-2 text-center" id="two">
+    <h3 class="margin">You shall not pass</h3>
+    <div id="image1"></div>
+  </div>
+
+  <!-- Third Container -->
+  <div class="container-fluid bg-3 text-center" id="three">
+    <h3 class="margin">Yes you can </h3><br>
+    <div class="images"></div>
+    <!-- #back-to-#id-one -->
+  </div>
+
 </body>
 </html>
-
