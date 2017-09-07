@@ -33,16 +33,16 @@ form {
 }
 
 /*=> Content of the No Section*/
-#image1{
-  height: 70%;
+#image1 img{
+  height: auto 0;
   width: 70%;
   margin: auto;
-  background-image: url("https://farm4.staticflickr.com/3678/32795294330_6472094603_o.jpg");
+  /*background-image: url("https://farm4.staticflickr.com/3678/32795294330_6472094603_o.jpg");
   background-size: 47%;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   border-width: 2px;
-  border-color: green;
+  border-color: green;*/
 }
 
 .bg-2 {
@@ -59,16 +59,16 @@ form {
 }
 
 /*=> Content of the Yes Section*/
-#image2{
-  height: 70%;
+#image2  img{
+  height: auto 0;
   width: 70%;
   margin: auto;
-  background-image: url("https://farm4.staticflickr.com/3899/33021103702_6f8b34e221_o.jpg");
+  /*background-image: url("https://farm4.staticflickr.com/3899/33021103702_6f8b34e221_o.jpg");
   background-size: 47%;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   border-width: 2px;
-  border-color: green;
+  border-color: green;*/
 }
 
 .navbar-inverse{
@@ -123,3 +123,9 @@ li.twBtn{
   color: #00bfff;
   text-align: center;
 }
+
+/*@media only screen and (max-width: 400px) {
+   #image2 img{
+    height: 60vw;
+    }
+}*/
