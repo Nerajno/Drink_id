@@ -1,4 +1,5 @@
-var myFunction = function() {
+var myFunction = function(event) {
+  event.preventDefault();
   var today = new Date();
   var year = today.getFullYear();
 
@@ -28,8 +29,8 @@ var myFunction = function() {
   };
 }
 //=> Running or rather calling the function.
-$("#move").click(myFunction);
-//This is for testing
+$("form").submit(myFunction);
+
 
 //=> this is the code for the back to top button, found on W3Schools site.
 //When the user scrools down from the top of the document, it shows the button.
