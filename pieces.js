@@ -1,14 +1,20 @@
 
 
 var myFunction = function(event) {
+  // Current date
   var today = new Date();
-  console.log(today);
+  //Current Year
   var year = today.getFullYear();
+  // The age you must be older than to drink
   var remainder = 21;
-  var urStuff = $("#birthYr").val();
-  var ableToDrnk = year - urStuff;
-  var other = year - ableToDrnk;
-
+  //Your age as an input value
+  var age = $("#currentAge").val();
+  //This returned value tells which year you were born
+  var yourBrthYr = year - age;
+  //This is the difference between year and yourBrthYr..... it should be => remainder
+  var drnkEligibilty = year - yourBrthYr;
+  console.log(drnkEligibilty);
+  // NOTE: now to make this auto scroll to section a or b based on if drnkEligibilty is over =>remainder....
 
   // $("form").submit(myFunction());
   // if (other >= remainder) {
