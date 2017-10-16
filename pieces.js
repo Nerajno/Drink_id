@@ -1,26 +1,31 @@
-var today = new Date();
-var year = today.getFullYear();
-var remainder = 21;
-var urStuff = $("#birthYr").val();
-var ableToDrnk = year - urStuff;
-var other = year - ableToDrnk;
+
 
 var myFunction = function(event) {
-  $("form").submit(myFunction());
-  if (other >= remainder) {
-    console.log("high");
-    $('body').animate({
-      scrollTop: $("#three").offset().top
-    }, 2000);
-    // console.log("Leo");
-  } else {
-    $('body').animate({
+  var today = new Date();
+  console.log(today);
+  var year = today.getFullYear();
+  var remainder = 21;
+  var urStuff = $("#birthYr").val();
+  var ableToDrnk = year - urStuff;
+  var other = year - ableToDrnk;
 
-      scrollTop: $("#two").offset().top
-    }, 2000);
-          console.log("low");
-  }
-  myFunction();
+
+  // $("form").submit(myFunction());
+  // if (other >= remainder) {
+  //   console.log("high");
+  //   $('body').animate({
+  //     scrollTop: $("#three").offset().top
+  //   }, 2000);
+  //   // console.log("Leo");
+  // } else {
+  //   $('body').animate({
+  //
+  //     scrollTop: $("#two").offset().top
+  //   }, 2000);
+  //         console.log("low");
+  //         console.log(other);
+  // }
+  // myFunction();
 };
 $("#move").click(myFunction);
 
