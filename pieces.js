@@ -14,6 +14,12 @@ var myFunction = function(event) {
   //This is the difference between year and yourBrthYr..... it should be => remainder
   var drnkEligibilty = year - yourBrthYr;
   console.log(drnkEligibilty);
+
+  if( drnkEligibilty => remainder){
+    console.log( "drink please");
+  }else {
+    console.log("no");
+  }
   // NOTE: now to make this auto scroll to section a or b based on if drnkEligibilty is over =>remainder....
 
   // $("form").submit(myFunction());
