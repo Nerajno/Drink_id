@@ -13,9 +13,12 @@ var myFunction = function(event) {
   var yourBrthYr = year - age;
   //This is the difference between year and yourBrthYr..... it should be => remainder
   var drnkEligibilty = year - yourBrthYr;
-  console.log(drnkEligibilty);
-
-  if( drnkEligibilty => remainder){
+  // console.log(drnkEligibilty);
+  
+  if(drnkEligibilty >= remainder){
+    $('html, body').animate({
+      scrollTop: $("#three").offset().top
+     }, 2000);
     console.log( "drink please");
   }else {
     console.log("no");
