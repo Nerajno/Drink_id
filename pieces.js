@@ -1,18 +1,17 @@
 
-
-var myFunction = function(event) {
+let myFunction = function(event) {
   // Current date
-  var today = new Date();
+  let today = new Date();
   //Current Year
-  var year = today.getFullYear();
+  let year = today.getFullYear();
   // The age you must be older than to drink
-  var remainder = 21;
+  let remainder = 21;
   //Your age as an input value
-  var age = $("#currentAge").val();
+  let age = $("#currentAge").val();
   //This returned value tells which year you were born
-  var yourBrthYr = year - age;
+  let yourBrthYr = year - age;
   //This is the difference between year and yourBrthYr..... it should be => remainder
-  var drnkEligibilty = year - yourBrthYr;
+  let drnkEligibilty = year - yourBrthYr;
   // console.log(drnkEligibilty);
   
   if(drnkEligibilty >= remainder){
@@ -20,33 +19,11 @@ var myFunction = function(event) {
       scrollTop: $("#three").offset().top
      }, 2000);
     console.log( "drink please");
-  }else {
+  }else{
     console.log("no");
   }
-  // NOTE: now to make this auto scroll to section a or b based on if drnkEligibilty is over =>remainder....
-
-  // $("form").submit(myFunction());
-  // if (other >= remainder) {
-  //   console.log("high");
-  //   $('body').animate({
-  //     scrollTop: $("#three").offset().top
-  //   }, 2000);
-  //   // console.log("Leo");
-  // } else {
-  //   $('body').animate({
-  //
-  //     scrollTop: $("#two").offset().top
-  //   }, 2000);
-  //         console.log("low");
-  //         console.log(other);
-  // }
-  // myFunction();
 };
 $("#move").click(myFunction);
-
-// $("form").submit(myFunction);
-// event.preventDefault();
-
 
 //=> this is the code for the back to top button, found on W3Schools site.
 //When the user scrools down from the top of the document, it shows the button.
