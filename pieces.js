@@ -1,5 +1,22 @@
 
-let myFunction = function(event) {
+function checkAge(drnkEligibilty, remainder) {
+  if (drnkEligibilty >= remainder) {
+    $("html, body").animate({
+      scrollTop: $("#three").offset().top
+    }, 2000);
+    console.log("drink please");
+  } else if (drnkEligibilty < remainder) {
+    $("html, body").animate({
+      scrollTop: $("#two").offset().top
+    }, 2000);
+    console.log("no");
+  } else {
+    console.log("this is broken");
+  }
+}
+
+
+let myFunction = function() {
  
   let today = new Date();  // Current date
   //Current Year
@@ -14,28 +31,19 @@ let myFunction = function(event) {
   let drnkEligibilty = year - yourBrthYr;
   // console.log(drnkEligibilty);
   
-  if(drnkEligibilty >= remainder){
-    $("html, body").animate({
-      scrollTop: $("#three").offset().top
-     }, 2000);
-    console.log("drink please");
-  }else if (drnkEligibilty < remainder){
-     $("html, body").animate({
-     scrollTop: $("#two").offset().top
-     }, 2000);
-  console.log("no");
-  } else{
-    console.log("this is broken");
-  }
+  checkAge(drnkEligibilty, remainder);
 };
 
-$("#move").click(myFunction);
+
+//$("#move").click(myFunction);
 
 //=> this is the code for the back to top button, found on W3Schools site.
 //When the user scrools down from the top of the document, it shows the button.
 window.onscroll = function() {
   scrollFunction();
 };
+
+
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
