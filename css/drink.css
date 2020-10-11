@@ -48,7 +48,8 @@ form {
 }
 
 .bg-3 {
-  color: black;
+  background-color: #71a0d6; /* Dark Blue */
+  /*color:#2f529d;*/
   height: 100vh;
   background-repeat: no-repeat;
   background-size: fixed;

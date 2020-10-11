@@ -1,7 +1,7 @@
 
 let myFunction = function(event) {
-  // Current date
-  let today = new Date();
+ 
+  let today = new Date();  // Current date
   //Current Year
   let year = today.getFullYear();
   // The age you must be older than to drink
@@ -15,14 +15,20 @@ let myFunction = function(event) {
   // console.log(drnkEligibilty);
   
   if(drnkEligibilty >= remainder){
-    $('html, body').animate({
+    $("html, body").animate({
       scrollTop: $("#three").offset().top
      }, 2000);
-    console.log( "drink please");
-  }else{
-    console.log("no");
+    console.log("drink please");
+  }else if (drnkEligibilty < remainder){
+     $("html, body").animate({
+     scrollTop: $("#two").offset().top
+     }, 2000);
+  console.log("no");
+  } else{
+    console.log("this is broken");
   }
 };
+
 $("#move").click(myFunction);
 
 //=> this is the code for the back to top button, found on W3Schools site.
