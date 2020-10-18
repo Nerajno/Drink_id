@@ -3,13 +3,13 @@
 This  project is a simple web app that will check to see if you can drink legally.
 
 ## Rationale
-
+Needed to build something and understand simple conditional statements.
 
 ## Live Version
 https://nerajno.github.io/Drink_id/
 
 ## Screenshot
-![Drink_id]()
+![Drink_id](https://github.com/Nerajno/Drink_id/blob/master/images/Drink_id.png)
 
 
 ## How it wrks
