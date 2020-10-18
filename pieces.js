@@ -5,12 +5,10 @@ function checkAge(drnkEligibilty, remainder) {
     $("html, body").animate({
       scrollTop: $("#three").offset().top
     }, 2000);
-    console.log("drink please");
   } else if (drnkEligibilty <= remainder) {
     $("html, body").animate({
       scrollTop: $("#two").offset().top
     }, 2000);
-    console.log("no");
   } else {
     console.log("this is broken");
   }
@@ -25,7 +23,6 @@ let myFunction = function() {
   let age = Number($("#currentAge").val());//Your age as an input value
   let yourBrthYr = year - age; //This returned value tells which year you were born
   let drnkEligibilty = year - yourBrthYr;   //This is the difference between year and yourBrthYr..... it should be => remainder
-  console.log( typeof age)
   checkAge(drnkEligibilty, remainder);
   event.preventDefault();
 };
