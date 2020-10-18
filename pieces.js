@@ -1,11 +1,12 @@
 
 function checkAge(drnkEligibilty, remainder) {
+
   if (drnkEligibilty >= remainder) {
     $("html, body").animate({
       scrollTop: $("#three").offset().top
     }, 2000);
     console.log("drink please");
-  } else if (drnkEligibilty < remainder) {
+  } else if (drnkEligibilty <= remainder) {
     $("html, body").animate({
       scrollTop: $("#two").offset().top
     }, 2000);
@@ -19,23 +20,18 @@ function checkAge(drnkEligibilty, remainder) {
 let myFunction = function() {
  
   let today = new Date();  // Current date
-  //Current Year
-  let year = today.getFullYear();
-  // The age you must be older than to drink
-  let remainder = 21;
-  //Your age as an input value
-  let age = $("#currentAge").val();
-  //This returned value tells which year you were born
-  let yourBrthYr = year - age;
-  //This is the difference between year and yourBrthYr..... it should be => remainder
-  let drnkEligibilty = year - yourBrthYr;
-  // console.log(drnkEligibilty);
-  
+  let year = today.getFullYear();//Current Year
+  let remainder = 21;  // The age you must be older than to drink
+  let age = Number($("#currentAge").val());//Your age as an input value
+  let yourBrthYr = year - age; //This returned value tells which year you were born
+  let drnkEligibilty = year - yourBrthYr;   //This is the difference between year and yourBrthYr..... it should be => remainder
+  console.log( typeof age)
   checkAge(drnkEligibilty, remainder);
+  event.preventDefault();
 };
 
 
-//$("#move").click(myFunction);
+$("#move").click(myFunction);
 
 //=> this is the code for the back to top button, found on W3Schools site.
 //When the user scrools down from the top of the document, it shows the button.
