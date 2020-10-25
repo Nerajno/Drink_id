@@ -26,3 +26,4 @@ https://nerajno.github.io/Drink_id/
 - [ ] make mobile compatible - figure out how to fix sections to be fill page per section.
 - [ ] make mobile compatible - fix image responsiveness.
 - [ ] make mobile compatible - fix back to top btn. 
+*** considering a rebuild instead of fixing it. 
